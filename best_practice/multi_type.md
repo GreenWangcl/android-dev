@@ -33,7 +33,7 @@ MultiType [声明](https://github.com/drakeet/MultiType/#license) 使用 `Apache
 | 数据源实体类 | 可以是任意实体类                                                                                                                                       | 实体类必须实现 MultiItemEntity                                                                                           |
 | ViewHolder   | 可以根据实体类或自定义类型值绑定不同的 ItemViewBinder ，而 ItemViewBinder 可以使用不同的 ViewHolder ，有利于 ViewHolder 解耦，具体请看后面的示例代码 | 在 Adapter 中需要指定对应的 ViewHolder ，如果需要解耦需要在 Adapter 中判断使用 ViewHolder ，因此会增加 Adapter 的复杂性 |
 
-## MultiType 实例代码
+## MultiType 示例代码
 
 ### Step 1. 创建数据实体类
 ```
