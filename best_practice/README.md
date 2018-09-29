@@ -36,7 +36,7 @@
 ## RecyclerView
 
 - 在进行数据 bind 时，需要 ViewHolder 提供类似 bind、bindData 方法进行数据绑定，避免在 ViewBinder 里进行绑定
-- 建议使用第三方库 MultiType 优化对 RecyclerView 的使用
+- 建议使用第三方库 [MultiType](https://github.com/drakeet/MultiType) 优化 RecyclerView 在多样式情况下的使用，为什么要用请看[这里](#multi_type.md)
 - 避免使用 LayoutInflater.from(context).inflate(R.layout.xxx, null)，尽量使用 LayoutInflater.from(context).inflate(R.layout.xxx, parent, false);
 - 通知列表更新尽量避免使用 notifyDataSetChanged 方法全部刷新，尽量使用 notifyItemChanged(int position) 和 notifyItemChanged(int position, Object payload) 方法减少刷新范围
 
